@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AnimationTry</string>
+    <string name="btnStart">Start Animation</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="check_button_name">Check</string>
+    <string name="email_error">example@domail.com</string>
+    <string name="password_error">Use at least 8 characters</string>
+    <string name="form_mistake">Error in form</string>
+    <string name="form_ok">Correct</string>
+    <string name="svg_align_left">M30 30H6v4h24v-4zm0-16H6v4h24v-4zM6 26h36v-4H6v4zm0 16h36v-4H6v4zM6 6v4h36V6H6z</string>
+    <string name="svg_align_justify">M42 30H6v4h36v-4zm0-16H6v4h36v-4zM6 26h36v-4H6v4zm0 16h36v-4H6v4zM6 6v4h36V6H6z</string>
+</resources>
