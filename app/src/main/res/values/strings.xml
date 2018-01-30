@@ -10,4 +10,6 @@
     <string name="form_ok">Correct</string>
     <string name="svg_align_left">M30 30H6v4h24v-4zm0-16H6v4h24v-4zM6 26h36v-4H6v4zm0 16h36v-4H6v4zM6 6v4h36V6H6z</string>
     <string name="svg_align_justify">M42 30H6v4h36v-4zm0-16H6v4h36v-4zM6 26h36v-4H6v4zm0 16h36v-4H6v4zM6 6v4h36V6H6z</string>
+    <string name="do_transaction_button">Do Transaction</string>
+    <string name="sample_text">sample text</string>
 </resources>
