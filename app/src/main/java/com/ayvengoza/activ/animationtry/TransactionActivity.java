@@ -1,5 +1,7 @@
 package com.ayvengoza.activ.animationtry;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.transition.ChangeBounds;
@@ -10,7 +12,9 @@ import android.support.transition.TransitionInflater;
 import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -34,6 +38,7 @@ public class TransactionActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction);
 
+        mLinearLayout = (LinearLayout)findViewById(R.id.linear_layout);
         mTransactionButton = (Button) findViewById(R.id.transaction_button);
         mTransactionButton.setOnClickListener(this);
 
@@ -60,6 +65,12 @@ public class TransactionActivity extends AppCompatActivity implements View.OnCli
             TransitionManager.go(mScene1, mTransition);
             mSceneCurrent = mScene1;
         }
+
+        final int x = (int) v.getX();
+        final int y = (int) v.getY();
+
+        final Animator animator = ViewAnimationUtils.createCircularReveal(mLinearLayout,x, y, 0, 400);
+        animator.start();
 
     }
 }
