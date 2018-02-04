@@ -10,6 +10,7 @@ import android.support.transition.Scene;
 import android.support.transition.Transition;
 import android.support.transition.TransitionInflater;
 import android.support.transition.TransitionManager;
+import android.support.v4.os.TraceCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -57,6 +58,7 @@ public class TransactionActivity extends AppCompatActivity implements View.OnCli
 
     @Override
     public void onClick(View v) {
+        TraceCompat.beginSection("TESTING - onClick");
         boolean hasScene1 = mSceneCurrent == mScene1;
         if(hasScene1){
             TransitionManager.go(mScene2, mTransition);
@@ -69,8 +71,9 @@ public class TransactionActivity extends AppCompatActivity implements View.OnCli
         final int x = (int) v.getX();
         final int y = (int) v.getY();
 
-        final Animator animator = ViewAnimationUtils.createCircularReveal(mLinearLayout,x, y, 0, 400);
+        final Animator animator = ViewAnimationUtils.createCircularReveal(mLinearLayout,x, y, 0, 800);
         animator.start();
+        TraceCompat.endSection();
 
     }
 }

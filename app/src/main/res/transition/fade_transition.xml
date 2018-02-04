@@ -3,7 +3,7 @@
     android:transitionOrdering="sequential">
 
     <fade android:fadingMode="fade_in"/>
-    <!--<changeBounds/>-->
-    <!--<fade android:fadingMode="fade_in"/>-->
+    <changeBounds/>
+    <fade android:fadingMode="fade_in"/>
 
 </transitionSet>
