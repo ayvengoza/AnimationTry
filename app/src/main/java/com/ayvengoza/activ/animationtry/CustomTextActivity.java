@@ -16,6 +16,6 @@ public class CustomTextActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_text);
         mConstraintLayout = (ConstraintLayout)findViewById(R.id.custom_text);
-        mConstraintLayout.setBackground(new SimpleTextDrawable("Custom text that I try to write more"));
+        mConstraintLayout.setBackground(new BetterTextDrawable("Custom text that I try to write more"));
     }
 }
