@@ -32,7 +32,7 @@ public class CustomDrawActivity extends AppCompatActivity {
         Log.d("Test string", parameters);
         Log.d("Test id", macAddress);
 
-        mConstraintLayout.setBackground(new SimpleImageDrawable(bitmap));
+        mConstraintLayout.setBackground(new FadedImageDrawable(bitmap));
     }
 
     public static String getMacAddr() {
